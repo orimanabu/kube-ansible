@@ -35,6 +35,10 @@ conmon_binary_url: https://github.com/containers/conmon/releases/download/v2.0.2
 network_type: "default"
 # Pod net work CIDR
 pod_network_cidr: "10.244.0.0/16"
+# Service network CIDR
+# service_network_cidr: "10.96.0.0/12"
+# Cluster DNS Domain
+# cluster_dns_domain: "cluster.local"
 
 # General config
 

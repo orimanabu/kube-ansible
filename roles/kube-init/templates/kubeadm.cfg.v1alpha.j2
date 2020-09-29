@@ -13,6 +13,12 @@ apiServerExtraArgs:
 {% endif %}
 networking:
   podSubnet: {{ pod_network_cidr }}
+{% if service_cidr %}
+  serviceSubnet: {{ service_network_cidr }}
+{% endif %}
+{% if cluster_dns_domain %}
+  dnsDomain: {{ cluster_dns_domain }}
+{% endif %}
 kubeletConfiguration:
   baseConfig:
     cgroupDriver: systemd
